@@ -1,0 +1,19 @@
+// fonts
+$font-pompiere: 'Pompiere', cursive;
+$font-lato: 'Lato', sans-serif;
+
+// colors
+$black: #0d0d0d;
+$white: #ffffff;
+$orange: #fe6f19;
+$plum-purple: #4c0341;
+$pale-mauve: #fae5ff;
+$red-brown: #882c07;
+
+
+// mixins
+@mixin font-styles($name, $size: 2rem, $weight: 400) {
+    font-family: $name;
+    font-size: $size;
+    font-weight: $weight;
+}
