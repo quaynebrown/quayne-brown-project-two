@@ -262,6 +262,10 @@ body {
   display: flex;
 }
 
+main {
+  background-color: #fae5ff;
+}
+
 ul {
   padding: 0;
 }
@@ -270,42 +274,28 @@ li {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #882c07;
+  color: #ffffff;
+}
+
+footer a {
+  color: #ffffff;
+}
+
 header {
-  height: 85vh;
   padding-top: 50px;
-  background-image: url("../../shoe-kloset-assets/header-image.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
 }
 
-header img {
-  position: absolute;
-  top: 200px;
-  right: 0;
-}
-
-.heading-one-container {
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-preferred-size: 100px;
-      flex-basis: 100px;
-}
-
-.heading-one-container span {
-  display: block;
-}
-
-.heading-one-container h1 {
-  font-family: "Pompiere", cursive;
-  font-size: 10.1rem;
-  font-weight: 400;
-  line-height: 64px;
-  color: #4c0341;
-  margin-top: 150px;
-}
-
-.header-logo-container {
+header .header-logo-container {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   font-family: "Pompiere", cursive;
@@ -313,13 +303,13 @@ header img {
   font-weight: 400;
 }
 
-.header-logo-container span {
+header .header-logo-container span {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 100%;
           flex: 1 0 100%;
 }
 
-.header-nav {
+header .header-nav {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -334,7 +324,7 @@ header img {
           justify-content: flex-end;
 }
 
-.header-nav ul {
+header .header-nav ul {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -345,25 +335,66 @@ header img {
           justify-content: space-between;
 }
 
-.header-nav li {
-  padding: 5px 10px;
-}
-
-.header-nav ul li:first-child {
+header .header-nav ul li:first-child {
   background-color: #4c0341;
 }
 
-.header-nav li:first-child a {
+header .header-nav li:first-child a {
   color: #ffffff;
 }
 
-.header-nav a {
+header .header-nav a {
+  padding: 5px 15px;
+  display: inline-block;
   text-decoration: none;
   text-transform: uppercase;
   color: #0d0d0d;
 }
 
-.header-nav a:hover,
-.header-nav a:focus {
+header .header-nav a:hover,
+header .header-nav a:focus {
   color: #fe6f19;
+}
+
+header h1 {
+  font-family: "Pompiere", cursive;
+  font-size: 10.1rem;
+  font-weight: 400;
+  line-height: 64px;
+  color: #4c0341;
+  margin-top: 150px;
+}
+
+.home-header {
+  height: 85vh;
+  background-image: url("../../shoe-kloset-assets/header-image.jpg");
+  position: relative;
+}
+
+.home-header img {
+  position: absolute;
+  top: 200px;
+  right: 0;
+}
+
+.home-header .heading-one-container {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-preferred-size: 100px;
+      flex-basis: 100px;
+}
+
+.home-header .heading-one-container span {
+  display: block;
+}
+
+.contact-header {
+  background-image: url("../../shoe-kloset-assets/contact-image.jpg");
+  height: 70vh;
+}
+
+.contact-header .heading-one-container {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
