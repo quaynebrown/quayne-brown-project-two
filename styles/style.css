@@ -278,6 +278,11 @@ a {
   text-decoration: none;
 }
 
+a:hover,
+a:focus {
+  color: #fe6f19;
+}
+
 footer {
   text-align: center;
   padding: 10px;
@@ -335,14 +340,6 @@ header .header-nav ul {
           justify-content: space-between;
 }
 
-header .header-nav ul li:first-child {
-  background-color: #4c0341;
-}
-
-header .header-nav li:first-child a {
-  color: #ffffff;
-}
-
 header .header-nav a {
   padding: 5px 15px;
   display: inline-block;
@@ -377,6 +374,19 @@ header h1 {
   right: 0;
 }
 
+.home-header li:nth-child(1) {
+  background-color: #4c0341;
+}
+
+.home-header li:nth-child(1) a {
+  color: #ffffff;
+}
+
+.home-header li:nth-child(1) a:hover,
+.home-header li:nth-child(1) a:focus {
+  color: #fe6f19;
+}
+
 .home-header .heading-one-container {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -388,6 +398,34 @@ header h1 {
   display: block;
 }
 
+.blog-header {
+  background-image: url("../../shoe-kloset-assets/blog-header.jpg");
+  height: 70vh;
+}
+
+.blog-header .heading-one-container {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.blog-header h1 {
+  text-transform: uppercase;
+}
+
+.blog-header li:nth-child(3) {
+  background-color: #4c0341;
+}
+
+.blog-header li:nth-child(3) a {
+  color: #ffffff;
+}
+
+.blog-header li:nth-child(3) a:hover,
+.blog-header li:nth-child(3) a:focus {
+  color: #fe6f19;
+}
+
 .contact-header {
   background-image: url("../../shoe-kloset-assets/contact-image.jpg");
   height: 70vh;
@@ -397,4 +435,21 @@ header h1 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.contact-header h1 {
+  text-transform: uppercase;
+}
+
+.contact-header li:nth-child(4) {
+  background-color: #4c0341;
+}
+
+.contact-header li:nth-child(4) a {
+  color: #ffffff;
+}
+
+.contact-header li:nth-child(4) a:hover,
+.contact-header li:nth-child(4) a:focus {
+  color: #fe6f19;
 }

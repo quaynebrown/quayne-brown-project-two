@@ -24,13 +24,9 @@ header{
             justify-content: space-between;
         }
 
-        ul li:first-child {
-            background-color: $plum-purple;
-        }
+        
         //TODO: ask designer if this is the defualt look on home page
-        li:first-child a{
-            color: $white;
-        }
+        
 
         a{
             padding: 5px 15px;
@@ -66,6 +62,19 @@ header{
         right: 0;
     }
 
+    li:nth-child(1) {
+        background-color: $plum-purple;
+    }
+
+    li:nth-child(1) a{
+        color: $white;
+    }
+
+    li:nth-child(1) a:hover, 
+    li:nth-child(1) a:focus{
+        color: $orange;
+    }
+
     .heading-one-container{
         flex-wrap: wrap;
         flex-basis: 100px;
@@ -75,15 +84,43 @@ header{
     }
 }
 
-// contact page header style
-.contact-header{
-    background-image: url('../../shoe-kloset-assets/contact-image.jpg');
-    height: 70vh;
-    
-    .heading-one-container{
-        justify-content: center;
+// blog page header style
+.blog-header{
+    @include header-style ($blog-header-bg-image);
+
+    li:nth-child(3) {
+        background-color: $plum-purple;
+    }
+
+    li:nth-child(3) a{
+        color: $white;
+    }
+
+    li:nth-child(3) a:hover, 
+    li:nth-child(3) a:focus{
+        color: $orange;
     }
 }
+
+// contact page header style
+.contact-header{
+    @include header-style ($contact-header-bg-image);
+
+    li:nth-child(4) {
+        background-color: $plum-purple;
+    }
+
+    li:nth-child(4) a{
+        color: $white;
+    }
+
+    li:nth-child(4) a:hover, 
+    li:nth-child(4) a:focus{
+        color: $orange;
+    }
+}
+
+
 
 
 
