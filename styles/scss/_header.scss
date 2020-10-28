@@ -1,0 +1,72 @@
+header{
+    height: 85vh;
+    padding-top: 50px;
+    background-image: url('../../shoe-kloset-assets/header-image.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    img{
+        position: absolute;
+        top:200px;
+        right: 0;
+    }
+}
+
+.heading-one-container{
+    flex-wrap: wrap;
+    flex-basis: 100px;
+    span{
+        display: block;
+    }
+    h1{
+        @include font-styles($font-pompiere, 10.1rem);
+        line-height: 64px;
+        color: $plum-purple;
+        margin-top: 150px;
+    }
+}
+
+.header-logo-container{
+    flex-wrap: wrap;
+    @include font-styles($font-pompiere, 3.58rem);
+    span{
+        flex: 1 0 100%;
+    }    
+}
+
+.header-nav{
+    flex: 1;
+    @include font-styles ($font-lato, 2rem, 700);
+    align-items: flex-start;
+    justify-content: flex-end;    
+
+    ul {
+        align-items: flex-start;
+        flex-basis: 450px;
+        justify-content: space-between;
+    }
+
+    li{
+        padding: 5px 10px;
+    }
+
+    ul li:first-child{
+        background-color: $plum-purple;
+    }
+    //TODO: ask designer if this is the defualt look on home page
+    li:first-child a{
+        color: $white;
+    }
+
+    a{
+        text-decoration: none;
+        text-transform: uppercase;
+        color: $black;
+    }
+
+    a:hover, 
+    a:focus{
+        color: $orange;
+    }
+}

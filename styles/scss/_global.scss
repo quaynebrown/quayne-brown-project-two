@@ -1,0 +1,29 @@
+html{
+    font-size: 62.5%;
+}
+
+*{
+    margin: 0;
+}
+
+body{
+    @include font-styles ($font-lato)
+}
+
+.wrapper{
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1280;
+}
+
+.flex-container{
+    display: flex;
+}
+
+ul{
+    padding: 0;
+}
+
+li{
+    list-style: none;
+}
