@@ -248,6 +248,7 @@ body {
   font-family: "Lato", sans-serif;
   font-size: 2rem;
   font-weight: 400;
+  line-height: 29px;
 }
 
 .wrapper {
@@ -372,6 +373,8 @@ header h1 {
   position: absolute;
   top: 200px;
   right: 0;
+  width: 50vw;
+  max-width: 700px;
 }
 
 .home-header li:nth-child(1) {
@@ -411,6 +414,9 @@ header h1 {
 
 .blog-header h1 {
   text-transform: uppercase;
+  font-size: 8rem;
+  letter-spacing: 92px;
+  font-family: "Pompiere", cursive;
 }
 
 .blog-header li:nth-child(3) {
@@ -439,6 +445,9 @@ header h1 {
 
 .contact-header h1 {
   text-transform: uppercase;
+  font-size: 8rem;
+  letter-spacing: 92px;
+  font-family: "Pompiere", cursive;
 }
 
 .contact-header li:nth-child(4) {
@@ -452,4 +461,85 @@ header h1 {
 .contact-header li:nth-child(4) a:hover,
 .contact-header li:nth-child(4) a:focus {
   color: #fe6f19;
+}
+
+.home-main .about {
+  padding: 200px 0;
+}
+
+.home-main .about article {
+  text-align: center;
+}
+
+.home-main h2 {
+  font-size: 5.2rem;
+  letter-spacing: 1.2px;
+  font-family: "Pompiere", cursive;
+  color: #4c0341;
+  text-transform: uppercase;
+  font-weight: 200;
+}
+
+.home-main p {
+  padding: 40px 0;
+}
+
+.home-main a {
+  text-transform: uppercase;
+  padding: 10px 20px;
+  background-color: #4c0341;
+  color: #ffffff;
+}
+
+.home-main .more-about-us .more-about-us-flex {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.home-main .more-about-us article {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 50%;
+          flex: 1 0 50%;
+  padding-bottom: 60px;
+}
+
+.home-main .more-about-us article div:nth-child(2) {
+  padding-left: 70px;
+  padding-right: 20px;
+}
+
+.home-main .more-about-us h2 {
+  line-height: 52px;
+  color: #0d0d0d;
+}
+
+.home-main .more-about-us .icon-container {
+  position: absolute;
+  width: 55px;
+  height: 55px;
+  background-color: #4c0341;
+  color: #ffffff;
+  border-radius: 50%;
+}
+
+.home-main .more-about-us i {
+  position: relative;
+  top: 12px;
+  left: 10px;
+  font-size: 3rem;
+}
+
+.home-main .more-about-us article:nth-child(3) i {
+  left: 16px;
+}
+
+.home-main .more-about-us p {
+  padding: 15px 0;
+}
+
+.home-main .banner {
+  height: 500px;
+  background-image: url("../../shoe-kloset-assets/banner.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }

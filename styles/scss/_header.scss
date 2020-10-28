@@ -23,11 +23,7 @@ header{
             flex-basis: 450px;
             justify-content: space-between;
         }
-
         
-        //TODO: ask designer if this is the defualt look on home page
-        
-
         a{
             padding: 5px 15px;
             display: inline-block;
@@ -60,6 +56,8 @@ header{
         position: absolute;
         top:200px;
         right: 0;
+        width: 50vw;
+        max-width: 700px;
     }
 
     li:nth-child(1) {
