@@ -48,7 +48,7 @@
         }
 
     // anchor buttons
-        @mixin anchor-button($bg-color, $color){
+        @mixin anchor-button($bg-color, $color: $white){
             text-transform: uppercase;
             padding: 10px 20px;
             background-color: $bg-color;

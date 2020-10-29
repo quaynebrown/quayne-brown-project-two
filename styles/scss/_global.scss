@@ -14,7 +14,7 @@ body{
 .wrapper{
     width: 80%;
     margin: 0 auto;
-    max-width: 1280;
+    max-width: 1280px;
 }
 
 .flex-container{
@@ -23,6 +23,14 @@ body{
 
 main{
     background-color: $pale-mauve;
+}
+
+figure{
+    background-color: $orange;
+}
+
+img{
+    display: block;
 }
 
 ul{

@@ -254,7 +254,7 @@ body {
 .wrapper {
   width: 80%;
   margin: 0 auto;
-  max-width: 1280;
+  max-width: 1280px;
 }
 
 .flex-container {
@@ -265,6 +265,14 @@ body {
 
 main {
   background-color: #fae5ff;
+}
+
+figure {
+  background-color: #fe6f19;
+}
+
+img {
+  display: block;
 }
 
 ul {
@@ -463,8 +471,22 @@ header h1 {
   color: #fe6f19;
 }
 
+.home-main a {
+  text-transform: uppercase;
+  padding: 10px 20px;
+  background-color: #882c07;
+  color: #ffffff;
+}
+
 .home-main .about {
   padding: 200px 0;
+}
+
+.home-main .about a {
+  text-transform: uppercase;
+  padding: 10px 20px;
+  background-color: #4c0341;
+  color: #ffffff;
 }
 
 .home-main .about article {
@@ -484,11 +506,17 @@ header h1 {
   padding: 40px 0;
 }
 
-.home-main a {
-  text-transform: uppercase;
-  padding: 10px 20px;
-  background-color: #4c0341;
-  color: #ffffff;
+.home-main .options {
+  background-color: #ffffff;
+}
+
+.home-main .options article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .home-main .more-about-us .more-about-us-flex {
@@ -542,4 +570,40 @@ header h1 {
   background-image: url("../../shoe-kloset-assets/banner.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.home-main .popular {
+  padding: 100px 0;
+  background-color: #ffffff;
+}
+
+.home-main .gallery {
+  padding: 100px 0;
+}
+
+.home-main .gallery ul {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.home-main .gallery li {
+  width: calc((100% / 3) - 80px);
+}
+
+.home-main .gallery li:nth-child(odd) {
+  margin: 0 0 20px 0;
+}
+
+.home-main .gallery li:nth-child(2) {
+  margin: 0 40px 20px 40px;
+}
+
+.home-main .gallery img {
+  width: 100%;
 }
