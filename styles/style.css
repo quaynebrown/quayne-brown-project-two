@@ -339,6 +339,7 @@ header .header-nav {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  display: none;
 }
 
 header .header-nav ul {
@@ -484,7 +485,7 @@ header h1 {
 }
 
 .home-main .about {
-  padding: 200px 0;
+  padding: 100px 0;
 }
 
 .home-main .about a {
@@ -499,9 +500,10 @@ header h1 {
 }
 
 .home-main h2 {
-  font-size: 5.2rem;
-  letter-spacing: 1.2px;
   font-family: "Pompiere", cursive;
+  font-size: 5.2rem;
+  line-height: 50px;
+  letter-spacing: 1.6px;
   color: #4c0341;
   text-transform: uppercase;
   font-weight: 200;
@@ -585,15 +587,16 @@ header h1 {
   text-align: center;
 }
 
+.home-main .more-about-us {
+  padding-top: 70px;
+}
+
 .home-main .more-about-us .more-about-us-flex {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 
 .home-main .more-about-us article {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 50%;
-          flex: 1 0 50%;
   padding-bottom: 60px;
 }
 
@@ -603,8 +606,8 @@ header h1 {
 }
 
 .home-main .more-about-us h2 {
-  line-height: 52px;
   color: #0d0d0d;
+  letter-spacing: 1.6px;
 }
 
 .home-main .more-about-us .icon-container {

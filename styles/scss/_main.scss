@@ -5,7 +5,7 @@
     }
 
     .about{
-        padding: 200px 0;
+        padding: 100px 0;
 
         a{
             @include anchor-button($plum-purple, $white);
@@ -20,7 +20,11 @@
     }
 
     h2{
-        @include heading-style(5.2rem, 1.2px);
+        // @include heading-style(5.2rem, 1.2px);
+        font-family: $font-pompiere;
+        font-size: 5.2rem;
+        line-height: 50px;
+        letter-spacing: 1.6px;
         color: $plum-purple;
         text-transform: uppercase;
         font-weight: 200;
@@ -99,12 +103,13 @@
     }
     
     .more-about-us{
+        padding-top: 70px;
         .more-about-us-flex{
             flex-wrap: wrap;
         }
 
         article{
-            flex:1 0 50%;
+            // flex:1 0 50%;
             padding-bottom: 60px;
 
             div:nth-child(2){
@@ -114,8 +119,8 @@
         }
 
         h2{
-            line-height: 52px;
             color: $black;
+            letter-spacing: 1.6px;
         }
 
         .icon-container{
@@ -140,7 +145,6 @@
 
         p{
             padding: 15px 0;
-
         }
     }
 
