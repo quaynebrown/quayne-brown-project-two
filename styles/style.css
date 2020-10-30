@@ -249,6 +249,7 @@ body {
   font-size: 2rem;
   font-weight: 400;
   line-height: 29px;
+  min-width: 300px;
 }
 
 .wrapper {
@@ -269,10 +270,12 @@ main {
 
 figure {
   background-color: #fe6f19;
+  margin: 0;
 }
 
 img {
   display: block;
+  width: 100%;
 }
 
 ul {
@@ -369,6 +372,8 @@ header h1 {
   line-height: 64px;
   color: #4c0341;
   margin-top: 150px;
+  position: relative;
+  z-index: 1;
 }
 
 .home-header {
@@ -506,17 +511,78 @@ header h1 {
   padding: 40px 0;
 }
 
-.home-main .options {
+.home-main .options-1st {
   background-color: #ffffff;
+  padding-top: 30px;
+  padding-bottom: 60px;
 }
 
-.home-main .options article {
+.home-main .options-1st .new-addition {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.home-main .options-1st figure {
+  margin: 0 0 70px 0;
+  position: relative;
+  top: 20px;
+  left: 20px;
+}
+
+.home-main .options-1st img {
+  width: 100%;
+  position: relative;
+  top: -30px;
+  left: -30px;
+}
+
+.home-main .options-1st article {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: center;
+}
+
+.home-main .options-2nd {
+  background-color: #ffffff;
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+
+.home-main .options-2nd .more-options {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.home-main .options-2nd figure {
+  margin: 0 0 70px 0;
+  position: relative;
+  top: 20px;
+  left: 20px;
+}
+
+.home-main .options-2nd img {
+  width: 100%;
+  position: relative;
+  top: -30px;
+  left: -30px;
+}
+
+.home-main .options-2nd article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
 }
 
 .home-main .more-about-us .more-about-us-flex {
@@ -566,7 +632,8 @@ header h1 {
 }
 
 .home-main .banner {
-  height: 500px;
+  height: 40vw;
+  max-height: 500px;
   background-image: url("../../shoe-kloset-assets/banner.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -575,6 +642,47 @@ header h1 {
 .home-main .popular {
   padding: 100px 0;
   background-color: #ffffff;
+}
+
+.home-main .popular > .flex-container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.home-main .popular > .flex-container .flex-container {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.home-main .popular h2 {
+  line-height: 60px;
+  font-size: 5.2rem;
+  letter-spacing: 1.2px;
+  font-family: "Pompiere", cursive;
+}
+
+.home-main .popular p {
+  padding-top: 20px;
+}
+
+.home-main .popular figure {
+  margin: 0 0 30px 0;
+  position: relative;
+  top: 20px;
+  left: 20px;
+}
+
+.home-main .popular img {
+  width: 100%;
+  position: relative;
+  top: -30px;
+  left: -30px;
 }
 
 .home-main .gallery {
@@ -592,16 +700,8 @@ header h1 {
           align-items: center;
 }
 
-.home-main .gallery li {
-  width: calc((100% / 3) - 80px);
-}
-
-.home-main .gallery li:nth-child(odd) {
-  margin: 0 0 20px 0;
-}
-
 .home-main .gallery li:nth-child(2) {
-  margin: 0 40px 20px 40px;
+  margin: 20px 0;
 }
 
 .home-main .gallery img {

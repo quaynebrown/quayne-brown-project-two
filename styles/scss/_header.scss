@@ -43,6 +43,8 @@ header{
         line-height: 64px;
         color: $plum-purple;
         margin-top: 150px;
+        position: relative;
+        z-index: 1;
     }
 }
 

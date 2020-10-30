@@ -9,6 +9,7 @@ html{
 body{
     @include font-styles ($font-lato);
     line-height: 29px;
+    min-width: 300px;
 }
 
 .wrapper{
@@ -27,10 +28,12 @@ main{
 
 figure{
     background-color: $orange;
+    margin: 0;
 }
 
 img{
     display: block;
+    width: 100%;
 }
 
 ul{
