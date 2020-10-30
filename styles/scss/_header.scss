@@ -4,6 +4,36 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
 
+    // .menu-toggle{
+    //     border: 2px solid $black;
+    //     width: 40px;
+    //     height: 40px;
+    //     position: absolute;
+    //     top: 40px;
+    //     right: 20px;
+
+    //     i {
+    //         font-size: 3.5rem;
+    //         position: relative;
+    //         top: -46px;
+    //         left: 2px;
+    //     }
+
+    //     [type=checkbox]{
+    //         position: relative;
+    //         top: -5px;
+    //         left: 0;
+    //         cursor: pointer;
+    //         z-index: 2;
+    //         height: 40px;
+    //         width: 40px;
+    //     }
+
+    //     [type=checkbox]:checked ~ .header-nav{
+    //         visibility: hidden;
+    //     }
+    // }
+
     .header-logo-container{
         flex-wrap: wrap;
         @include font-styles($font-pompiere, 3.58rem);
@@ -14,6 +44,7 @@ header{
     }
 
     .header-nav{
+        
         flex: 1;
         @include font-styles ($font-lato, 2rem, 700);
         align-items: flex-start;

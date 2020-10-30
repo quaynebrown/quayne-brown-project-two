@@ -9,7 +9,6 @@ html{
 body{
     @include font-styles ($font-lato);
     line-height: 29px;
-    min-width: 300px;
 }
 
 .wrapper{
