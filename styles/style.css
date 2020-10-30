@@ -318,6 +318,7 @@ header .header-logo-container {
   font-family: "Pompiere", cursive;
   font-size: 3.58rem;
   font-weight: 400;
+  line-height: 36px;
 }
 
 header .header-logo-container span {
@@ -368,11 +369,11 @@ header .header-nav a:focus {
 
 header h1 {
   font-family: "Pompiere", cursive;
-  font-size: 10.1rem;
+  font-size: 4rem;
   font-weight: 400;
-  line-height: 64px;
+  line-height: 36px;
   color: #4c0341;
-  margin-top: 150px;
+  margin-top: 50px;
   position: relative;
   z-index: 1;
 }
@@ -652,6 +653,9 @@ header h1 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .home-main .popular > .flex-container .flex-container {
@@ -686,6 +690,11 @@ header h1 {
   position: relative;
   top: -30px;
   left: -30px;
+}
+
+.home-main .popular figure, .home-main .popular img {
+  max-height: 320px;
+  max-width: 320px;
 }
 
 .home-main .gallery {

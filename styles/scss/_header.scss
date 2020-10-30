@@ -7,6 +7,7 @@ header{
     .header-logo-container{
         flex-wrap: wrap;
         @include font-styles($font-pompiere, 3.58rem);
+        line-height: 36px;
         span{
             flex: 1 0 100%;
         }    
@@ -41,10 +42,10 @@ header{
     }
 
     h1{
-        @include font-styles($font-pompiere, 10.1rem);
-        line-height: 64px;
+        @include font-styles($font-pompiere, 4rem);
+        line-height: 36px;
         color: $plum-purple;
-        margin-top: 150px;
+        margin-top: 50px;
         position: relative;
         z-index: 1;
     }
