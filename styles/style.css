@@ -788,6 +788,16 @@ header h1 {
   padding: 80px 0;
 }
 
+.contact-main a, .contact-main a:visited {
+  color: #4c0341;
+}
+
+.contact-main a:hover,
+.contact-main a:focus,
+.contact-main a:active {
+  color: #fe6f19;
+}
+
 .contact-main > div {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -921,12 +931,17 @@ header h1 {
     text-align: left;
   }
   .contact-main .conact-form {
-    width: 75%;
+    width: 70%;
     float: right;
     background-color: #fe6f19;
     position: relative;
     top: -200px;
     left: 0px;
+  }
+  .contact-main form {
+    position: relative;
+    top: -40px;
+    left: 40px;
   }
   .contact-main textarea {
     min-height: 180px;
