@@ -299,6 +299,7 @@ footer {
   padding: 10px;
   background-color: #882c07;
   color: #ffffff;
+  clear: both;
 }
 
 footer a {
@@ -476,6 +477,17 @@ header h1 {
 .contact-header li:nth-child(4) a:hover,
 .contact-header li:nth-child(4) a:focus {
   color: #fe6f19;
+}
+
+@media (min-width: 720px) {
+  header .header-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header .header-nav ul {
+    background-color: rgba(255, 255, 255, 0.4);
+  }
 }
 
 .home-main a {
@@ -773,7 +785,14 @@ header h1 {
 }
 
 .contact-main {
-  padding: 140px 0;
+  padding: 80px 0;
+}
+
+.contact-main > div {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .contact-main li {
@@ -800,21 +819,14 @@ header h1 {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 20%;
           flex: 1 0 20%;
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 .contact-main .conact-form {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 60%;
-          flex: 1 1 60%;
-  background-color: #fe6f19;
-  position: relative;
-  bottom: 300px;
-  left: -20px;
-}
-
-.contact-main form {
-  background-color: #ffffff;
-  padding: 50px;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .contact-main .contact-info-container {
@@ -824,18 +836,60 @@ header h1 {
 
 .contact-main .contact-info-container div {
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
-.contact-main .contact-info-container input {
-  width: 96%;
+.contact-main form {
+  background-color: #ffffff;
+  padding: 50px;
+}
+
+.contact-main fieldset {
+  border: none;
+  padding: 20px 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.contact-main input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #fe6f19;
+}
+
+.contact-main input, .contact-main textarea {
+  padding: 15px 20px;
+}
+
+.contact-main ::-webkit-input-placeholder {
+  opacity: 1;
+  font-size: 1.8rem;
+}
+
+.contact-main :-ms-input-placeholder {
+  opacity: 1;
+  font-size: 1.8rem;
+}
+
+.contact-main ::-ms-input-placeholder {
+  opacity: 1;
+  font-size: 1.8rem;
+}
+
+.contact-main ::placeholder {
+  opacity: 1;
+  font-size: 1.8rem;
 }
 
 .contact-main textarea {
+  border: 1px solid #fe6f19;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  min-height: 120px;
+  resize: none;
+  width: auto;
 }
 
 .contact-main button {
@@ -845,4 +899,36 @@ header h1 {
   background-color: #882c07;
   color: #ffffff;
   border: none;
+}
+
+@media (min-width: 720px) {
+  fieldset div:nth-child(1) {
+    margin-right: 10px;
+  }
+  fieldset div:nth-child(2) {
+    margin-left: 10px;
+  }
+}
+
+@media (min-width: 1040px) {
+  .contact-main {
+    padding: 80px 0 0 0;
+  }
+  .contact-main .conact-details {
+    margin-top: 50px;
+    float: left;
+    width: 25%;
+    text-align: left;
+  }
+  .contact-main .conact-form {
+    width: 75%;
+    float: right;
+    background-color: #fe6f19;
+    position: relative;
+    top: -200px;
+    left: 0px;
+  }
+  .contact-main textarea {
+    min-height: 180px;
+  }
 }

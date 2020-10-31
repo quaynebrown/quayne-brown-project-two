@@ -1,5 +1,8 @@
 .contact-main{
-    padding: 140px 0;
+    padding: 80px 0;
+    > div{
+        flex-direction: column;
+    }
     li {
         display: inline-block;
         padding-right: 20px;
@@ -21,42 +24,97 @@
 
     .conact-details{
         flex: 1 0 20%;
+        text-align: center;
+        margin-bottom: 50px;
     }
 
     .conact-form{
-        flex: 1 1 60%;
-        background-color: $orange;
-        position: relative;
-        bottom: 300px;
-        left: -20px;
-    }
-
-    form{
-        background-color: $white;
-        padding: 50px;
-        // position: absolute;
-        // left: 40px;
-        // top: -50px;
-        // width: 60vw;
-
+        flex: 1;
     }
 
     .contact-info-container{
         justify-content: space-around;
         div{
-            flex: 1;
-        }
-        input{
-            width: 96%;
+            flex-grow: 1;
         }
     }
 
-    textarea{
-        flex: 1;
+
+
+    form{
+        background-color: $white;
+        padding: 50px;
     }
+
+    fieldset {
+        border: none;
+        padding: 20px 0;
+        flex-wrap: wrap;
+    }
+
+    input{
+            width: 100%;
+            border: none;
+            border-bottom: 1px solid $orange;
+    }
+
+    input, textarea{
+        padding: 15px 20px;
+    }
+
+    ::placeholder {
+        opacity: 1;
+        font-size: 1.8rem; 
+    }
+
+    textarea{
+        border: 1px solid $orange;
+        flex: 1;
+        min-height: 120px;
+        resize: none;
+        width: auto;
+    }
+
     button{
         width: 100%;
         @include anchor-button($red-brown);
         border: none;
+    }
+}
+
+@media (min-width: 720px){
+    fieldset div:nth-child(1){
+        margin-right: 10px;
+    }
+
+    fieldset div:nth-child(2){
+        margin-left: 10px;
+    }
+}
+
+@media (min-width: 1040px){
+    .contact-main{
+        padding: 80px 0 0 0;
+
+        .conact-details{
+            margin-top: 50px;
+            float: left;
+            width: 25%;
+            text-align: left;
+        }
+
+        .conact-form{
+            width: 75%;
+            float: right;
+            background-color: $orange;
+            position: relative;
+            top: -200px;
+            left: 0px;
+
+        }
+
+        textarea{
+            min-height: 180px;
+        }
     }
 }

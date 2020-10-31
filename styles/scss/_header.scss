@@ -156,6 +156,16 @@ header{
     }
 }
 
+@media(min-width: 720px){
+    header .header-nav{
+        display: flex;
+        ul{
+            // dark text does not show on dark background when the screen scale down
+            background-color: rgba(255, 255, 255, 0.4);
+        }
+    }
+}
+
 
 
 
