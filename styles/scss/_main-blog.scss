@@ -1,0 +1,44 @@
+.outer-container{
+    flex-direction: column;
+
+    figure{
+        background-color: $orange;
+    }
+
+    p{
+        margin-bottom: 40px;
+    }
+}
+
+.main-image{
+    position: relative;
+    top: -20px;
+    left: 20px;
+}
+
+.shoes-around{
+    background-color: $white;
+    padding: 40px;
+}
+
+.aside-container{
+    background-color: $white;
+
+    figure{
+        background-color: $white;
+    }
+    img{
+        position: relative;
+        top: -20px;
+        left: -20px;
+    }
+
+    li{
+        list-style-type: disc;
+        margin-left: 20px;
+    }
+}
+
+.aside-content{
+    padding: 20px;
+}
