@@ -370,7 +370,6 @@ header h1 {
   font-family: "Pompiere", cursive;
   font-size: 4rem;
   font-weight: 400;
-  line-height: 36px;
   color: #4c0341;
   margin-top: 50px;
   position: relative;
@@ -429,7 +428,6 @@ header h1 {
 .blog-header h1 {
   text-transform: uppercase;
   font-size: 8rem;
-  letter-spacing: 92px;
   font-family: "Pompiere", cursive;
 }
 
@@ -460,8 +458,11 @@ header h1 {
 .contact-header h1 {
   text-transform: uppercase;
   font-size: 8rem;
-  letter-spacing: 92px;
   font-family: "Pompiere", cursive;
+}
+
+.contact-header h1 {
+  line-height: 92px;
 }
 
 .contact-header li:nth-child(4) {
@@ -669,8 +670,7 @@ header h1 {
 .home-main .popular h2 {
   line-height: 60px;
   font-size: 5.2rem;
-  letter-spacing: 1.2px;
-  font-family: "Pompiere", cursive;
+  font-family: 1.2px;
 }
 
 .home-main .popular p {
@@ -770,4 +770,79 @@ header h1 {
         -ms-flex: 1 1 60%;
             flex: 1 1 60%;
   }
+}
+
+.contact-main {
+  padding: 140px 0;
+}
+
+.contact-main li {
+  display: inline-block;
+  padding-right: 20px;
+  padding-bottom: 10px;
+}
+
+.contact-main h3 {
+  font-size: 3rem;
+  font-family: "Pompiere", cursive;
+  text-transform: uppercase;
+  color: #4c0341;
+  padding: 10px 0;
+  font-weight: 200;
+}
+
+.contact-main p {
+  font-weight: 200;
+  font-size: 1.7rem;
+}
+
+.contact-main .conact-details {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 20%;
+          flex: 1 0 20%;
+}
+
+.contact-main .conact-form {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 60%;
+          flex: 1 1 60%;
+  background-color: #fe6f19;
+  position: relative;
+  bottom: 300px;
+  left: -20px;
+}
+
+.contact-main form {
+  background-color: #ffffff;
+  padding: 50px;
+}
+
+.contact-main .contact-info-container {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.contact-main .contact-info-container div {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.contact-main .contact-info-container input {
+  width: 96%;
+}
+
+.contact-main textarea {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.contact-main button {
+  width: 100%;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  background-color: #882c07;
+  color: #ffffff;
+  border: none;
 }

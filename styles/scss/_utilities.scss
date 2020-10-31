@@ -26,9 +26,8 @@
         }
 
     // headings style
-        @mixin heading-style ($size, $letter-spacing, $name: $font-pompiere){
+        @mixin heading-style ($size, $name: $font-pompiere){
             font-size: $size;
-            letter-spacing: $letter-spacing;
             font-family: $name;
         }
 
@@ -43,7 +42,7 @@
 
             h1{
                 text-transform: uppercase;
-                @include heading-style(8rem, 92px);
+                @include heading-style(8rem);
             }
         }
 

@@ -74,7 +74,6 @@ header{
 
     h1{
         @include font-styles($font-pompiere, 4rem);
-        line-height: 36px;
         color: $plum-purple;
         margin-top: 50px;
         position: relative;
@@ -139,6 +138,9 @@ header{
 // contact page header style
 .contact-header{
     @include header-style ($contact-header-bg-image);
+    h1{
+        line-height: 92px;
+    }
 
     li:nth-child(4) {
         background-color: $plum-purple;

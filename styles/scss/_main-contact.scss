@@ -1,0 +1,62 @@
+.contact-main{
+    padding: 140px 0;
+    li {
+        display: inline-block;
+        padding-right: 20px;
+        padding-bottom: 10px;
+    }
+
+    h3{
+        @include heading-style(3rem);
+        text-transform: uppercase;
+        color: $plum-purple;
+        padding: 10px 0;
+        font-weight: 200;
+    }
+
+    p{
+        font-weight: 200;
+        font-size: 1.7rem;
+    }
+
+    .conact-details{
+        flex: 1 0 20%;
+    }
+
+    .conact-form{
+        flex: 1 1 60%;
+        background-color: $orange;
+        position: relative;
+        bottom: 300px;
+        left: -20px;
+    }
+
+    form{
+        background-color: $white;
+        padding: 50px;
+        // position: absolute;
+        // left: 40px;
+        // top: -50px;
+        // width: 60vw;
+
+    }
+
+    .contact-info-container{
+        justify-content: space-around;
+        div{
+            flex: 1;
+        }
+        input{
+            width: 96%;
+        }
+    }
+
+    textarea{
+        flex: 1;
+    }
+    button{
+        width: 100%;
+        @include anchor-button($red-brown);
+        border: none;
+    }
+}
