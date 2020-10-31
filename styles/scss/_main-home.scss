@@ -49,7 +49,7 @@
             margin: 0 0 70px 0;
             position: relative;
             top: 20px;
-            left: 15px;
+            left: 20px;
         }
         
         // USED MORE THAN ONCE.
@@ -57,8 +57,8 @@
         img{
             width: 100%;
             position: relative;
-            top: -30px;
-            left: - 30px;
+            top: -40px;
+            left: - 40px;
         }
 
         article{
@@ -83,7 +83,7 @@
             margin: 0 0 70px 0;
             position: relative;
             top: 20px;
-            left: 15px;
+            left: -20px;
         }
         
         // USED MORE THAN ONCE.
@@ -91,8 +91,8 @@
         img{
             width: 100%;
             position: relative;
-            top: -30px;
-            left: - 30px;
+            top: -40px;
+            left: 40px;
         }
 
         article{
@@ -240,6 +240,14 @@
 
     //media query 1040px and above
     @media (min-width: 1040px){
+        // option-1st section
+        // TODO: having trouble selecting '.home-main .options-1st .new-addition'
+        .home-main .options-1st .new-addition{
+            flex-direction: row;
+            flex-wrap: nowrap;
+            background-color: green;
+        }
+
         // popular section outer flex-container
         .popular > .flex-container {
             flex-direction: row;

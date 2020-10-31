@@ -530,14 +530,14 @@ header h1 {
   margin: 0 0 70px 0;
   position: relative;
   top: 20px;
-  left: 15px;
+  left: 20px;
 }
 
 .home-main .options-1st img {
   width: 100%;
   position: relative;
-  top: -30px;
-  left: -30px;
+  top: -40px;
+  left: -40px;
 }
 
 .home-main .options-1st article {
@@ -567,14 +567,14 @@ header h1 {
   margin: 0 0 70px 0;
   position: relative;
   top: 20px;
-  left: 15px;
+  left: -20px;
 }
 
 .home-main .options-2nd img {
   width: 100%;
   position: relative;
-  top: -30px;
-  left: -30px;
+  top: -40px;
+  left: 40px;
 }
 
 .home-main .options-2nd article {
@@ -736,6 +736,15 @@ header h1 {
 }
 
 @media (min-width: 1040px) {
+  .home-main .home-main .options-1st .new-addition {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    background-color: green;
+  }
   .home-main .popular > .flex-container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
