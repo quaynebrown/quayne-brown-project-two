@@ -530,7 +530,7 @@ header h1 {
   margin: 0 0 70px 0;
   position: relative;
   top: 20px;
-  left: 20px;
+  left: 15px;
 }
 
 .home-main .options-1st img {
@@ -567,7 +567,7 @@ header h1 {
   margin: 0 0 70px 0;
   position: relative;
   top: 20px;
-  left: 20px;
+  left: 15px;
 }
 
 .home-main .options-2nd img {
@@ -731,6 +731,34 @@ header h1 {
   .home-main .gallery li,
   .home-main .gallery li:nth-child(2) {
     margin: 0 20px;
-    width: calc(33.3%  - 40px);
+    width: calc(33.334%  - 40px);
+  }
+}
+
+@media (min-width: 1040px) {
+  .home-main .popular > .flex-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .home-main .popular > .flex-container figure {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 40%;
+            flex: 1 0 40%;
+    min-width: 320px;
+  }
+  .home-main .popular > .flex-container .flex-container {
+    text-align: left;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    text-align: flex-start;
+    padding-left: 100px;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 60%;
+            flex: 1 1 60%;
   }
 }

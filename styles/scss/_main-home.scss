@@ -49,7 +49,7 @@
             margin: 0 0 70px 0;
             position: relative;
             top: 20px;
-            left: 20px;
+            left: 15px;
         }
         
         // USED MORE THAN ONCE.
@@ -83,7 +83,7 @@
             margin: 0 0 70px 0;
             position: relative;
             top: 20px;
-            left: 20px;
+            left: 15px;
         }
         
         // USED MORE THAN ONCE.
@@ -234,7 +234,30 @@
         .gallery li,
         .gallery li:nth-child(2){
             margin: 0 20px;
-            width: calc(33.3%  - 40px);
+            width: calc(33.334%  - 40px);
+        }
+    }
+
+    //media query 1040px and above
+    @media (min-width: 1040px){
+        // popular section outer flex-container
+        .popular > .flex-container {
+            flex-direction: row;
+            justify-content: space-around;
+
+            figure{
+                flex: 1 0 40%;
+                min-width: 320px;
+            }
+        }
+
+        // popular section > inside the article
+        .popular > .flex-container .flex-container{
+            text-align: left;
+            justify-content: flex-start;
+            text-align: flex-start;
+            padding-left: 100px;
+            flex: 1 1 60%;
         }
     }
 }
