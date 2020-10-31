@@ -29,6 +29,9 @@
         @mixin heading-style ($size, $name: $font-pompiere){
             font-size: $size;
             font-family: $name;
+            text-transform: uppercase;
+            font-weight: 200;
+            color: $plum-purple;
         }
 
     // only used for blog and contact page

@@ -44,6 +44,17 @@ li{
     list-style: none;
 }
 
+h3{
+    @include heading-style(5.2rem);
+    line-height: 5.2rem;
+    font-weight: 200;
+    margin: 40px 0;
+}
+
+h4{
+    margin-bottom: 20px;
+}
+
 a{
     text-decoration: none;
 }
@@ -51,6 +62,44 @@ a{
 a:hover, 
 a:focus{
     color: $orange;
+}
+
+.contact-info-container{
+    justify-content: space-around;
+    div{
+        flex-grow: 1;
+    }
+}
+
+fieldset {
+    border: none;
+    padding: 20px 0;
+    flex-wrap: wrap;
+}
+
+input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid $orange;
+    
+}
+
+input, textarea{
+    padding: 15px 20px;
+    background-color: inherit;
+}
+
+::placeholder {
+    opacity: 1;
+    font-size: 1.8rem; 
+}
+
+textarea{
+    border: 1px solid $orange;
+    flex: 1;
+    min-height: 120px;
+    resize: none;
+    width: auto;
 }
 
 footer{
@@ -62,5 +111,15 @@ footer{
 
     a{
         color: $white;
+    }
+}
+
+@media (min-width: 720px){
+    fieldset div:nth-child(1){
+        margin-right: 10px;
+    }
+
+    fieldset div:nth-child(2){
+        margin-left: 10px;
     }
 }
