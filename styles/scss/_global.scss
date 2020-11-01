@@ -55,8 +55,9 @@ h4{
     margin-bottom: 20px;
 }
 
-a{
+a, .hamburger-menu{
     text-decoration: none;
+    transition: color 0.2s;
 }
 
 a:hover, 
