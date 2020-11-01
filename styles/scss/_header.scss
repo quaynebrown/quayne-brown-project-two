@@ -84,7 +84,7 @@ header{
 // home page header style
 .home-header{
     height: 85vh;
-    background-image: url('../../shoe-kloset-assets/header-image.jpg');
+    background-image: url($home-header-bg-image-potrait);
     position: relative;
 
     img{
@@ -119,8 +119,9 @@ header{
 
 // blog page header style
 .blog-header{
-    @include header-style ($blog-header-bg-image);
-
+    // @include header-style ($blog-header-bg-image-potrait);
+@include header-style ($blog-header-bg-image);
+background-position-x: -980px;
     li:nth-child(3) {
         background-color: $plum-purple;
     }
@@ -157,12 +158,38 @@ header{
 }
 
 @media(min-width: 720px){
+    .home-header{
+        background-image: url($home-header-bg-image);
+        background-position-x: -300px;
+    }
+
     header .header-nav{
         display: flex;
         ul{
             // dark text does not show on dark background when the screen scale down
             background-color: rgba(255, 255, 255, 0.6);
         }
+    }
+
+    //blog header image change
+    .blog-header{
+        background-image: url($blog-header-bg-image);
+        background-position-x: -750px;
+
+    }
+}
+
+@media (min-width: 1040px){
+    .home-header,
+    .blog-header{
+        background-position-x: -300px;
+    }
+}
+
+@media (min-width: 1430px){
+    .home-header,
+    .blog-header{
+        background-position-x: 0;
     }
 }
 
