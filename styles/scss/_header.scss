@@ -85,13 +85,18 @@ header{
         }
     }
 
+    .heading-one-container{
+        height: 55vh;
+        display: flex;
+        align-items: center;
+    }
+
     h1{
         @include heading-style(10.1rem);
         text-transform: none;
         line-height: 64px;
         color: $plum-purple;
         text-shadow:  2px 2px $pale-mauve;
-        margin-top: 50px;
         position: relative;
         z-index: 10;
     }

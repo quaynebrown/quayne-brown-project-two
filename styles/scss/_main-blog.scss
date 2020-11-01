@@ -24,9 +24,18 @@
         }
     }
 
+    .main-content{
+        position: relative;
+        top: -220px;
+    }
+
     li:last-child article{
         margin-bottom: 0;
     }
+}
+
+.blog-main{
+    padding-bottom: 0;
 }
 
 h5{
@@ -85,6 +94,9 @@ button{
 
 aside{
     max-width: 440px;
+    position: relative;
+    top: -200px;
+
 }
 
 .aside-content{
@@ -93,6 +105,7 @@ aside{
 
  // media query 720px and above
 @media(min-width: 720px){
+    
     li.flex-container figure{
         flex: 1 0 100px;
     }
@@ -119,10 +132,15 @@ aside{
 
     .main-content{
         flex-basis: 60%;
+
+        > figure img{
+            width: 115%;
+        }
     }
 
     aside{
         order: -1;
         flex-basis: 30%;
+        top: 0;
     }
 }
