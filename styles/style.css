@@ -254,7 +254,7 @@ body {
 .wrapper {
   width: 90%;
   margin: 0 auto;
-  max-width: 1280px;
+  max-width: 1400px;
 }
 
 .flex-container {
@@ -294,7 +294,7 @@ h3 {
   color: #4c0341;
   line-height: 5.2rem;
   font-weight: 200;
-  margin: 40px 0;
+  margin: 5px 0;
 }
 
 h4 {
@@ -576,7 +576,7 @@ header h1 {
     display: flex;
   }
   header .header-nav ul {
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.6);
   }
 }
 
@@ -613,7 +613,7 @@ header h1 {
 }
 
 .home-main p {
-  padding: 40px 0;
+  padding: 20px 0;
 }
 
 .home-main .options-1st {
@@ -632,7 +632,7 @@ header h1 {
 .home-main .options-1st figure {
   margin: 0 0 70px 0;
   position: relative;
-  top: 20px;
+  bottom: 30px;
   left: 20px;
 }
 
@@ -651,6 +651,7 @@ header h1 {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+  padding-left: 100px;
 }
 
 .home-main .options-2nd {
@@ -792,7 +793,7 @@ header h1 {
 .home-main .popular img {
   width: 100%;
   position: relative;
-  top: -30px;
+  bottom: 30px;
   left: -30px;
 }
 
@@ -802,7 +803,7 @@ header h1 {
 }
 
 .home-main .gallery {
-  padding: 100px 0;
+  padding: 100px 0 0 0;
 }
 
 .home-main .gallery ul {
@@ -833,6 +834,10 @@ header h1 {
         -ms-flex: 1 1 50%;
             flex: 1 1 50%;
   }
+  .home-main .popular img {
+    bottom: 40px;
+    left: -40px;
+  }
   .home-main .gallery li,
   .home-main .gallery li:nth-child(2) {
     margin: 0 20px;
@@ -841,14 +846,83 @@ header h1 {
 }
 
 @media (min-width: 1040px) {
-  .home-main .home-main .options-1st .new-addition {
+  .home-main .about {
+    padding-bottom: 200px;
+  }
+  .home-main .about .about-content-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .home-main .about article {
+    max-width: 1200px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding-top: 60px;
+  }
+  .home-main .options-1st,
+  .home-main .options-2nd {
+    padding: 0;
+  }
+  .home-main .options-1st .new-addition {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    background-color: green;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .home-main .options-1st figure {
+    bottom: 30px;
+    left: -60px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 45%;
+            flex: 0 1 45%;
+  }
+  .home-main .options-1st article {
+    text-align: left;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+  }
+  .home-main .options-2nd {
+    height: 320px;
+  }
+  .home-main .options-2nd .more-options {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .home-main .options-2nd figure {
+    bottom: 30px;
+    left: 50px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 45%;
+            flex: 0 1 45%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .home-main .options-2nd article {
+    padding-right: 40px;
+    text-align: right;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 40%;
+            flex: 0 1 40%;
   }
   .home-main .popular > .flex-container {
     -webkit-box-orient: horizontal;
@@ -889,6 +963,10 @@ header h1 {
 
 .outer-container figure {
   background-color: #fe6f19;
+}
+
+.outer-container h3 {
+  margin: 40px 0;
 }
 
 .outer-container p {
@@ -963,7 +1041,7 @@ button {
 .aside-container img {
   position: relative;
   top: -20px;
-  left: -20px;
+  right: 20px;
 }
 
 .aside-container li {
@@ -984,6 +1062,10 @@ aside {
     -webkit-box-flex: 1;
         -ms-flex: 1 0 100px;
             flex: 1 0 100px;
+  }
+  .aside-container img {
+    width: 120%;
+    right: 110px;
   }
 }
 

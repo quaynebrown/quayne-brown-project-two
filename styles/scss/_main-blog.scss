@@ -6,6 +6,10 @@
         background-color: $orange;
     }
 
+    h3{
+        margin: 40px 0;
+    }
+
     p{
         margin-bottom: 40px;
     }
@@ -70,7 +74,7 @@ button{
     img{
         position: relative;
         top: -20px;
-        left: -20px;
+        right: 20px;
     }
 
     li{
@@ -91,6 +95,11 @@ aside{
 @media(min-width: 720px){
     li.flex-container figure{
         flex: 1 0 100px;
+    }
+
+    .aside-container img{
+        width: 120%;
+        right: 110px;
     }
 }
 
