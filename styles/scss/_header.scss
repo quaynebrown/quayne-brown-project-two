@@ -12,27 +12,42 @@ header{
     //     top: 40px;
     //     right: 20px;
 
-    //     i {
-    //         font-size: 3.5rem;
-    //         position: relative;
-    //         top: -46px;
-    //         left: 2px;
-    //     }
+    i {
+        font-size: 3.5rem;
+        position: absolute;
+        top: 0px;
+        right: 2px;
+        border-radius: 5px;
+        color: $plum-purple;
+        background-color: $pale-mauve;
+        padding: 5px;
+    }
 
-    //     [type=checkbox]{
-    //         position: relative;
-    //         top: -5px;
-    //         left: 0;
-    //         cursor: pointer;
-    //         z-index: 2;
-    //         height: 40px;
-    //         width: 40px;
-    //     }
+    [type="checkbox"]{
+        position: absolute;
+        top: 0;
+        right: 0;
+        cursor: pointer;
+        z-index: 2;
+        height: 40px;
+        width: 40px;
+        opacity: 0;
+    }
 
-    //     [type=checkbox]:checked ~ .header-nav{
-    //         visibility: hidden;
-    //     }
-    // }
+    [type="checkbox"]:checked + .header-nav{
+            visibility: hidden;
+    }
+
+    [type="checkbox"]:hover ~ .hamburger-menu{
+        color: $orange;
+        background-color: $pale-mauve;
+    }
+
+
+    .nav-container{
+        position: relative;
+        z-index: 20;
+    }
 
     .header-logo-container{
         flex-wrap: wrap;
@@ -54,6 +69,9 @@ header{
             align-items: flex-start;
             flex-basis: 450px;
             justify-content: space-between;
+
+            // dark text does not show on dark background when the screen scale down
+            background-color: rgba(255, 255, 255, 0.6);
         }
         
         a{
@@ -69,15 +87,17 @@ header{
             color: $orange;
         }
 
-        display: none;
     }
 
     h1{
-        @include font-styles($font-pompiere, 4rem);
+        @include heading-style(10.1rem);
+        text-transform: none;
+        line-height: 64px;
         color: $plum-purple;
+        text-shadow:  2px 2px $pale-mauve;
         margin-top: 50px;
         position: relative;
-        z-index: 1;
+        z-index: 10;
     }
 }
 
@@ -109,8 +129,14 @@ header{
     }
 
     .heading-one-container{
-        flex-wrap: wrap;
-        flex-basis: 100px;
+        align-items: center;
+        height: 72vh;
+        max-width: 300px;
+
+        position: relative;
+        bottom: 100px;
+        left: 0;
+
         span{
             display: block;
         }
@@ -163,26 +189,17 @@ background-position-x: -980px;
         background-position-x: -300px;
     }
 
-    header .header-nav{
-        display: flex;
-        ul{
-            // dark text does not show on dark background when the screen scale down
-            background-color: rgba(255, 255, 255, 0.6);
-        }
-    }
-
     //blog header image change
     .blog-header{
         background-image: url($blog-header-bg-image);
         background-position-x: -750px;
-
     }
 }
 
 @media (min-width: 1040px){
     .home-header,
     .blog-header{
-        background-position-x: -300px;
+        background-position-x: -250px;
     }
 }
 
