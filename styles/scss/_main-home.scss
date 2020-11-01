@@ -13,14 +13,15 @@
     }
 
     .about article{
-        // flex-direction: column;
-        // justify-content: center;
-        // align-items: center;
         text-align: center;
     }
 
+    .about-content-container{
+        position: relative;
+        z-index: 10;
+    }
+
     h2{
-        // @include heading-style(5.2rem, 1.2px);
         font-family: $font-pompiere;
         font-size: 5.2rem;
         line-height: 50px;
@@ -65,7 +66,6 @@
             display: flex;
             align-items: center;
             text-align: center;
-            padding-left: 100px;
         }
     }
 
@@ -239,8 +239,8 @@
         // gallery section styles
         .gallery li,
         .gallery li:nth-child(2){
-            margin: 0 20px;
-            width: calc(33.334%  - 40px);
+            margin: 0 20px 20px 20px;
+            width: calc(33.33%  - 40px);
         }
     }
 
@@ -283,6 +283,7 @@
         .options-1st article{
             text-align: left;
             flex: 0 0 50%;
+            padding-left: 100px;
         }
 
         // option-2nd section

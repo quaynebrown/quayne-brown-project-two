@@ -602,6 +602,11 @@ header h1 {
   text-align: center;
 }
 
+.home-main .about-content-container {
+  position: relative;
+  z-index: 10;
+}
+
 .home-main h2 {
   font-family: "Pompiere", cursive;
   font-size: 5.2rem;
@@ -651,7 +656,6 @@ header h1 {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  padding-left: 100px;
 }
 
 .home-main .options-2nd {
@@ -840,8 +844,8 @@ header h1 {
   }
   .home-main .gallery li,
   .home-main .gallery li:nth-child(2) {
-    margin: 0 20px;
-    width: calc(33.334%  - 40px);
+    margin: 0 20px 20px 20px;
+    width: calc(33.33%  - 40px);
   }
 }
 
@@ -890,6 +894,7 @@ header h1 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 50%;
             flex: 0 0 50%;
+    padding-left: 100px;
   }
   .home-main .options-2nd {
     height: 320px;
