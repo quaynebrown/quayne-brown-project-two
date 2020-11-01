@@ -4,12 +4,15 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
 
+    span{
+        text-shadow: 2px 2px $white;
+    }
+
     i {
-        font-size: 3.5rem;
+        font-size: 2.9rem;
         position: absolute;
         top: 0px;
         right: 2px;
-        border-radius: 5px;
         background-color: $plum-purple;
         color: $pale-mauve;
         padding: 5px;
@@ -62,17 +65,9 @@ header{
         ul {
             display: block;
             border: 5px;
-
             background-color: $pale-mauve;
         }
 
-        & ul,
-        li:first-child,
-        a:hover,
-        a:focus {
-            border-radius: 0 5px 0 0;
-        }
-        
         a{
             padding: 5px 15px;
             display: inline-block;
@@ -88,7 +83,6 @@ header{
             color: $orange;
             background-color: $plum-purple;
         }
-
     }
 
     h1{
@@ -120,6 +114,7 @@ header{
     .heading-one-container{
         align-items: center;
         height: 72vh;
+        min-height: 460px;
         max-width: 300px;
 
         position: relative;
@@ -134,9 +129,8 @@ header{
 
 // blog page header style
 .blog-header{
-    // @include header-style ($blog-header-bg-image-potrait);
 @include header-style ($blog-header-bg-image);
-background-position-x: -980px;
+
     li:nth-child(3) {
         background-color: $plum-purple;
     }
@@ -174,20 +168,34 @@ background-position-x: -980px;
 
 @media(min-width: 720px){
     header{
+        .hamburger-menu,
+        [type="checkbox"]{
+            visibility: hidden;
+        }
+
         .header-nav{
-            
             flex: 1;
+            display: flex;
             @include font-styles ($font-lato, 2rem, 700);
             align-items: flex-start;
-            justify-content: flex-end;    
+            justify-content: flex-end;  
+            position: static; 
+            transform: scale(1); 
 
             ul {
+                display: flex;
                 align-items: flex-start;
                 flex-basis: 450px;
                 justify-content: space-between;
 
                 // dark text does not show on dark background when the screen scale down
                 background-color: rgba(255, 255, 255, 0.6);
+            }
+
+            li{
+                display: inline-block;
+                flex:1;
+                text-align: center;
             }
             
             a{
@@ -202,8 +210,6 @@ background-position-x: -980px;
 
     .home-header{
         background-image: url($home-header-bg-image);
-        background-position-x: -300px;
-
         li:nth-child(1) {
             background-color: $plum-purple;
         }
@@ -221,14 +227,20 @@ background-position-x: -980px;
     //blog header image change
     .blog-header{
         background-image: url($blog-header-bg-image);
-        background-position-x: -750px;
+    }
+}
+
+@media(max-height: 775px) and (max-width: 1040px){
+    .blog-header{
+        height: auto;
+        background-size: cover;
+        background-position: 0;
     }
 }
 
 @media (min-width: 1040px){
-    .home-header,
-    .blog-header{
-        background-position-x: -250px;
+    .home-header{
+        // background-position-x: -250px;
     }
 }
 
