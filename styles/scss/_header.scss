@@ -3,11 +3,14 @@ header{
     padding-top: 50px;
     background-repeat: no-repeat;
     background-size: cover;
-
+    
+    // add text shadow to logo
+    // does not show properly on dark background
     span{
         text-shadow: 2px 2px $white;
     }
 
+    // hamburger menu styling and positioning
     i {
         font-size: 2.9rem;
         position: absolute;
@@ -18,6 +21,7 @@ header{
         padding: 5px;
     }
 
+    // menu checkbox styling and positioning
     [type="checkbox"]{
         position: absolute;
         top: 0;
@@ -29,8 +33,8 @@ header{
         opacity: 0;
     }
 
+    // scale navbar to be visible when the checkbox is pressed i.e(hamburger icon is pressed)
     [type="checkbox"]:checked + .header-nav{
-            // visibility: hidden;
             transform: scale(1);
     }
 
@@ -53,6 +57,7 @@ header{
         }    
     }
 
+    // navbar styling
     .header-nav{
             display: block;
             position: absolute;
@@ -91,6 +96,7 @@ header{
         align-items: center;
     }
 
+    // heading styleing on smaller screen
     h1{
         @include heading-style(6rem);
         text-transform: none;
@@ -114,9 +120,10 @@ header{
         top:200px;
         right: 0;
         width: 50vw;
-        max-width: 700px;
+        max-width: 650px;
     }    
 
+    // homepage heading container
     .heading-one-container{
         align-items: center;
         height: 72vh;
@@ -135,7 +142,7 @@ header{
 
 // blog page header style
 .blog-header{
-@include header-style ($blog-header-bg-image);
+@include header-style ($blog-header-bg-image-potrait);
 
     li:nth-child(3) {
         background-color: $plum-purple;
@@ -169,6 +176,13 @@ header{
     li:nth-child(4) a:hover, 
     li:nth-child(4) a:focus{
         color: $orange;
+    }
+}
+
+@media (max-height: 500px) and (max-width: 860px){
+    .blog-header{
+        height: 90vh;
+        background-image: url($blog-header-bg-image);
     }
 }
 
@@ -212,8 +226,6 @@ header{
                 color: $black;
             }
         }
-
-        
     }
 
     .home-header{
@@ -243,7 +255,6 @@ header{
         display: none;
     }
     .blog-header{
-        // height: auto;
         background-size: cover;
         background-position: 0;
     }
@@ -258,12 +269,6 @@ header{
     }
 }
 
-@media (min-width: 1430px){
-    .home-header,
-    .blog-header{
-        background-position-x: 0;
-    }
-}
 
 
 

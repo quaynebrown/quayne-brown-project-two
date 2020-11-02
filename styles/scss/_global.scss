@@ -6,10 +6,12 @@ html{
     margin: 0;
 }
 
+// primary font style
 body{
     @include font-styles ($font-lato);
     line-height: 29px;
 }
+
 
 .wrapper{
     width: 90%;
@@ -21,6 +23,7 @@ body{
     display: flex;
 }
 
+// primary background color
 main{
     background-color: $pale-mauve;
     padding: 100px 0;
@@ -80,6 +83,7 @@ a:focus{
     color: $orange;
 }
 
+// form setup
 .contact-info-container{
     justify-content: space-around;
     div{
@@ -96,7 +100,7 @@ fieldset {
 input{
     width: 100%;
     border: none;
-    border-bottom: 1px solid $orange;
+    border-bottom: 2px solid $orange;
     
 }
 
@@ -111,7 +115,7 @@ input, textarea{
 }
 
 textarea{
-    border: 1px solid $orange;
+    border: 2px solid $orange;
     flex: 1;
     min-height: 120px;
     resize: none;
@@ -130,6 +134,7 @@ footer{
     }
 }
 
+// media query to adjust form input margin
 @media (min-width: 720px){
     fieldset div:nth-child(1){
         margin-right: 10px;
