@@ -1231,6 +1231,9 @@ aside {
   .blog-main .main-content {
     top: -100px;
   }
+  aside {
+    top: -100px;
+  }
 }
 
 @media (min-width: 1040px) {
