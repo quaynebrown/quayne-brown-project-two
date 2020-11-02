@@ -44,13 +44,14 @@
             background-image: url($url);
             height: $bg-height;
 
-            .heading-one-container{
+            .heading-container{
                 justify-content: center;
+                align-items: center;
             }
 
-            h1{
+            .heading-container h1{
                 text-transform: uppercase;
-                @include heading-style(8rem);
+                font-size: 8rem;
             }
         }
 

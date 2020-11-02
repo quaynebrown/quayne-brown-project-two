@@ -116,6 +116,12 @@ aside{
     }
 }
 
+@media (max-height:700px){
+    .blog-main .main-content{
+        top: -100px;
+    }
+}
+
 // media query width 1040px and above
 @media (min-width: 1040px){
     .outer-container{

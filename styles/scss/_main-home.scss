@@ -275,7 +275,7 @@
         }
 
         .options-1st figure{
-            bottom: 30px;
+            bottom: 0;
             left: -60px;
             flex: 0 1 45%;
         }
@@ -311,12 +311,6 @@
             flex: 0 1 40%;
         }
 
-        .more-about-us{
-            // position: relative;
-            // top: -100px;
-            // left: 0;
-        }
-        
 
         // popular section outer flex-container
         .popular > .flex-container {

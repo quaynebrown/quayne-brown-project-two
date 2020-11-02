@@ -55,9 +55,24 @@ h4{
     margin-bottom: 20px;
 }
 
-a, .hamburger-menu{
+a, 
+button,
+.hamburger-menu,
+.anchor-container a,
+.home-main .about a,
+.form-container button{
     text-decoration: none;
-    transition: color 0.2s;
+    transition: color 0.5s, background-color 0.2s;
+}
+
+.anchor-container a:hover,
+.anchor-container a:focus,
+.form-container button:hover,
+.form-container button:focus,
+.home-main .about a:hover,
+.home-main .about a:focus{
+    background-color: $orange;
+    color: $black;
 }
 
 a:hover, 

@@ -92,12 +92,13 @@ header{
     }
 
     h1{
-        @include heading-style(10.1rem);
+        @include heading-style(6rem);
         text-transform: none;
-        line-height: 64px;
+        line-height: 40px;
         color: $plum-purple;
         text-shadow:  2px 2px $pale-mauve;
         position: relative;
+        bottom: 20px;
         z-index: 10;
     }
 }
@@ -211,6 +212,8 @@ header{
                 color: $black;
             }
         }
+
+        
     }
 
     .home-header{
@@ -235,17 +238,23 @@ header{
     }
 }
 
-@media(max-height: 775px) and (max-width: 1040px){
+@media(max-height: 775px) and (min-width: 950px){
+    .home-header img{
+        display: none;
+    }
     .blog-header{
-        height: auto;
+        // height: auto;
         background-size: cover;
         background-position: 0;
     }
 }
 
 @media (min-width: 1040px){
-    .home-header{
-        // background-position-x: -250px;
+    .heading-one-container{
+        h1{
+            font-size: 10.1rem;
+            line-height: 64px;
+        }
     }
 }
 

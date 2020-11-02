@@ -301,10 +301,25 @@ h4 {
   margin-bottom: 20px;
 }
 
-a, .hamburger-menu {
+a,
+button,
+.hamburger-menu,
+.anchor-container a,
+.home-main .about a,
+.form-container button {
   text-decoration: none;
-  -webkit-transition: color 0.2s;
-  transition: color 0.2s;
+  -webkit-transition: color 0.5s, background-color 0.2s;
+  transition: color 0.5s, background-color 0.2s;
+}
+
+.anchor-container a:hover,
+.anchor-container a:focus,
+.form-container button:hover,
+.form-container button:focus,
+.home-main .about a:hover,
+.home-main .about a:focus {
+  background-color: #fe6f19;
+  color: #0d0d0d;
 }
 
 a:hover,
@@ -500,16 +515,17 @@ header .heading-one-container {
 }
 
 header h1 {
-  font-size: 10.1rem;
+  font-size: 6rem;
   font-family: "Pompiere", cursive;
   text-transform: uppercase;
   font-weight: 200;
   color: #4c0341;
   text-transform: none;
-  line-height: 64px;
+  line-height: 40px;
   color: #4c0341;
   text-shadow: 2px 2px #fae5ff;
   position: relative;
+  bottom: 20px;
   z-index: 10;
 }
 
@@ -548,19 +564,18 @@ header h1 {
   height: 70vh;
 }
 
-.blog-header .heading-one-container {
+.blog-header .heading-container {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.blog-header h1 {
+.blog-header .heading-container h1 {
   text-transform: uppercase;
   font-size: 8rem;
-  font-family: "Pompiere", cursive;
-  text-transform: uppercase;
-  font-weight: 200;
-  color: #4c0341;
 }
 
 .blog-header li:nth-child(3) {
@@ -581,19 +596,18 @@ header h1 {
   height: 70vh;
 }
 
-.contact-header .heading-one-container {
+.contact-header .heading-container {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.contact-header h1 {
+.contact-header .heading-container h1 {
   text-transform: uppercase;
   font-size: 8rem;
-  font-family: "Pompiere", cursive;
-  text-transform: uppercase;
-  font-weight: 200;
-  color: #4c0341;
 }
 
 .contact-header h1 {
@@ -684,11 +698,20 @@ header h1 {
   }
 }
 
-@media (max-height: 775px) and (max-width: 1040px) {
+@media (max-height: 775px) and (min-width: 950px) {
+  .home-header img {
+    display: none;
+  }
   .blog-header {
-    height: auto;
     background-size: cover;
     background-position: 0;
+  }
+}
+
+@media (min-width: 1040px) {
+  .heading-one-container h1 {
+    font-size: 10.1rem;
+    line-height: 64px;
   }
 }
 
@@ -1002,7 +1025,7 @@ header h1 {
         justify-content: space-around;
   }
   .home-main .options-1st figure {
-    bottom: 30px;
+    bottom: 0;
     left: -60px;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 45%;
@@ -1204,6 +1227,12 @@ aside {
   }
 }
 
+@media (max-height: 700px) {
+  .blog-main .main-content {
+    top: -100px;
+  }
+}
+
 @media (min-width: 1040px) {
   .outer-container {
     -webkit-box-orient: horizontal;
@@ -1346,5 +1375,11 @@ aside {
   }
   .contact-main textarea {
     min-height: 180px;
+  }
+}
+
+@media (max-height: 700px) {
+  .contact-main .conact-form {
+    top: -80px;
   }
 }

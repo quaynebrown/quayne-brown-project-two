@@ -64,6 +64,7 @@
     }
 }
 
+
 @media (min-width: 1040px){
     .contact-main{
         padding: 80px 0 0 0;
@@ -93,5 +94,11 @@
         textarea{
             min-height: 180px;
         }
+    }
+}
+
+@media (max-height:700px){
+    .contact-main .conact-form{
+        top: -80px;
     }
 }
